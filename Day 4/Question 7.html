@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Question 7</title>
+</head>
+<body>
+       <script>
+           var num1 = prompt("Enter number");
+           nextPrime:
+               for (var i = 2; i <= num1; i++) {
+                   for (var j = 2; j < i; j++) {
+                       if (i % j == 0)
+                       { continue nextPrime; }
+                       console.log(i);
+                   }
+               }
+       </script>
+</body>
+</html>
