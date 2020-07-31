@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        var n = prompt("Enter a positive number");
+        if (n!=0)
+        {
+            for(var i=0;i<n;i++)
+            {
+            var number=prompt("Enter elements");
+            arr.push(number);
+            }
+        }
+        console.log(arr);
+        var odd = arr.filter(arr =>arr%2!==0);
+        console.log(odd);
+        var cube = [];
+        for(var i=0;i<odd.length;i++)
+        {
+            cube = odd[i]*odd[i]*odd[i];
+            console.log(cube);
+        }
+      
+    </script>
+</body>
+</html>
